@@ -1,0 +1,60 @@
+/* Some css stuff goes here */
+
+body{
+    background-color:whitesmoke;
+}
+
+header {
+ background-color:orange;
+ padding: 0 30px;
+ font-size: 24px;
+}
+
+.large_screen{
+    display:none;
+}
+
+.split_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content_box{
+    background-color: lightskyblue;
+    padding:8px 40px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+main {
+    margin-top:10px;
+    background-color: lightslategray;
+}
+
+/* smaller than iPad size 810*1080px */
+@media (min-width:810px) {
+    header{
+        background-color: lightblue;
+        padding: 5px;
+        margin-bottom:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 32px;
+    }
+
+    .large_screen {
+        display: inline-block;
+    }
+
+    .small_menu{
+        display: none;
+    }
+}
+
+/* .sample-pallet {
+    background-color: lightslategrey;
+    background-color: lightskyblue;
+    background-color: lightseagreen;
+} */
